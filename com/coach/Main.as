@@ -16,6 +16,12 @@ package com.coach
 		{
 			trace('Main!');
 			
+			_model = new Model();
+			_controller = new Controller(_model);
+			_view = new View(_model,_controller);
+			
+			addChild(_view);
+			
 			
 		}
 	}
